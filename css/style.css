@@ -1,0 +1,350 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+.contenido{
+    margin: 0;
+}
+
+.contenido-inicial{
+    background-image: url("../img/banner.jpg");
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*EDITANDO EL NAVEGADOR*/
+
+.nav-logo-a:hover{
+    font-size: 4.25rem;
+}
+.navegador{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.navegador .nav-opciones{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.navegador .nav-logo{
+    text-align: center;
+    margin-top: 3rem;
+}
+.navegador .nav-opciones a{
+    text-align: center;
+}
+
+.nav-logo-a diego:hover{
+    font-size: 4.75rem;
+}
+
+
+.nav-a{
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+diego{
+    font-size: 4.5rem;
+    font-weight: bold;
+    transition: 1s;
+}
+.nav-logo-a{
+    font-size: 4rem;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+@media (min-width: 780px){
+    .navegador{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navegador .nav-opciones{
+        display: flex;
+    }
+    
+    .nav-opciones{
+        margin-top: 3rem;
+        margin-right: 3rem;
+    }
+
+    .nav-logo{
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+/* EDITANDO EL CONTENIDO PRINCIPAL*/
+    /*BLOG*/
+
+article{
+    margin-bottom: 4rem;
+}
+.blog p{
+    font-size: 2rem;
+}
+
+.blog-a{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+}
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido-principal .cursos{
+    margin: auto 25px;
+}
+
+.blog{
+    margin: 3rem
+}
+
+.blog h1{
+    text-align: left;
+}
+
+
+img{
+    width: 100%;
+}
+@media (min-width: 780px){
+  
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+    }
+   
+}
+    /*CURSOS*/
+.cursos h1{
+    text-align: left;
+}
+
+.cursos-p, .cursos-span{
+    font-size: 2.5rem;
+}
+
+.cursos-p{
+    font-weight: bold;
+}
+
+.cursos-span{
+    font-weight: normal;
+}
+
+.cursos-a{
+    background-color:#654321;
+    color:white;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transition: 1s;
+    
+}
+
+.cursos-a:hover{
+    font-size: 1.75rem;
+}
+
+.cursos-1, .cursos-2{
+    margin-bottom: 3.5rem;
+}
+/*EDITANDO EL FOOTER*/
+footer{
+    margin-top:0;
+    background-color: black;
+    color: white;
+}
+
+.footer-contenido{
+    padding:3rem;
+}
+
+/*ESTILOS DE LA PAGINA NOSOTROS*/
+
+.nosotros-contenido{
+    display: flex;
+   flex-wrap: wrap;
+   margin: auto 25px;
+}
+
+.nosotros-contenido img{
+    width: 100%;
+}
+
+.nosotros h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 780px){
+
+    .nosotros-contenido{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/*PAGINA DE CURSOS*/
+
+.titulo-h1{
+    text-align: center;
+    margin: 3rem 3rem;
+}
+
+.curso-parrafo{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.curso-span{
+    
+    font-weight: normal;
+}
+.contenido-cursos{
+    width: 90%;
+    margin: 0 auto;
+}
+.curso-articulo1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+}
+
+/*EDITAMOS LA PAGINA DE CONTACTO*/
+.principal{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contenido-img{
+    background-image: url("../img/contacto.jpg");
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formulario{
+    background-color: white;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: -8rem;
+    margin-bottom: 10rem;
+}
+
+.formulario input{
+    width: 80%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.formulario textarea{
+    width: 80%;
+    height: 60%;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.formulario label{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido-formulario{
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.formulario .boton{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    margin-left: 0;
+    border: none;
+    transition: 0.75s;
+}
+
+.formulario .boton:hover{
+    background-color: #3a3433;
+}
+
+.contactanos{
+    text-align: center;
+}
+
+@media (min-width: 780px){
+    .formulario .boton{
+        width: 25%;
+    }
+}
+
+
+/*Editando al mensaje creado en JS*/
+
+.error{
+    background-color: rgb(185,0,0);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.enviado{
+    background-color: rgb(75,185,0);
+    color:black;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
